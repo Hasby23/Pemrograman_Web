@@ -1,0 +1,285 @@
+
+
+:root{
+    --main-color:#FF5F00;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #EEEEEE;
+    padding-left: 300px;
+}
+
+section{
+    padding: 10px 5%;
+    min-height: 750px;
+}
+
+.heading{
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 30px;
+    background: var(--main-color);
+    color: #EEEEEE;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover{
+    letter-spacing: 2px;
+    background: #00092C;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    padding: 80px 20px;
+    z-index: 1000;
+    background: #00092C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .logo{
+    text-transform: uppercase;
+    color: #EEEEEE;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+header .logo span{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+header .navbar a{
+    display: block;
+    font-size: 20px;
+    color: #EEEEEE;
+    margin: 20px;
+}
+
+header .navbar a:hover{
+    letter-spacing: 2px;
+    color:  var(--main-color);
+}
+header .box-container{
+    width: 300px;
+}
+
+header .box-container .box .ull li{
+    list-style: none;
+    float: left;
+    width: 25%;
+}
+
+header .box-container .box .ull li .logo{
+    height: 40px;
+    width: 40px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.home .content{
+    flex: 1;
+}
+
+.home .content .hi{
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.home .content h3{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .content .info{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.about .row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.about .row-1 .image{
+    flex: 1;
+}
+
+.about .row-1 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 10px solid #EEEEEE;
+    border-radius: 5px;
+}
+
+.about .row-1 .content{
+    flex: 500px;
+}
+
+.about .row-1 .content h3{
+    font-size: 35px;
+}
+
+.about .row-1 .content p{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.about .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 5px;
+}
+
+.about .row-1 .content .box-container .box{
+    flex: 1;
+}
+
+.about .row-1 .content .box-container .box span{
+    color: var(--main-color);
+}
+
+.about .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.about .row-2 .box-container{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.about .row-2 .box-container .box{
+    flex: 1;
+    background:#EEEEEE;
+    border-radius: 5px;
+}
+
+.about .row-2 .box-container .box p{
+    font-size: 15px;
+}
+
+.about .row-2 .box-container .box span{
+    color: var(--main-color);
+}
+
+.contact .box-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.contact .box-container .box{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background:#EEEEEE;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.contact .box-container .box h3{
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.contact .box-container .box h3 span{
+    color: var(--main-color);
+}
+
+.contact .box-container .box p{
+    font-size: 17px;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact .row form{
+    flex: 1;
+    background: #EEEEEE;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.contact .row form .box, 
+.contact .row form textarea{
+    width: 100%;
+    border-bottom: 1px;
+    text-transform: none;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact .row form .box:focus, 
+.contact .row form textarea:focus{
+    border-color: var(--main-color);
+}
+
+.contact .row form .box::placeholder, 
+.contact .row form textarea::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form textarea{
+    height: 200px;
+    resize: none;
+}
+
+.contact .row form .btn{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
